@@ -7,29 +7,44 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: bisque;
+}
+
+/* Gap between sections */
+
+.padding {
+    display: flex;
+    margin: 1rem auto auto auto;
+    background-color: black;
+    justify-content: center;
+    border-radius: 25px;
+    width: 50%;
+    padding: 25px;
 }
 
 /* header */
 
-header {
-    
+.header {
     width: 100%;
     background-color: lightblue;
-    z-index: 100;
+    display: flex;
+    color: white;
+}
 
+.header h2 {
+    padding-left: 25px;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: hidden;
-}
 
+    width: 100%;
+}
 .nav-item {
+    float: right;
+    vertical-align: bottom;
     color: white;
     list-style: none;
-    padding: 14px 16px;
+    padding: 1rem;
     font-weight: bold;
     font-size: 2rem;
     
@@ -39,15 +54,116 @@ header {
     color: white;
 }
 
+/* Top Section*/
+
 .main {
-    display: flex;
-    
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    background-image: url("img/background.jpg");
+    padding-top: 50px;
+    background-image: url("img/background1.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-items img {
+    height: 250px;
+    float: left;
+    padding: 15px 15px 15px 5px;
+}
+
+.main-items li {
+    list-style-type: none;
+    justify-content: center;
+}
+
+.main-items {
+    width: 500px;
+    height: 100%;
+    border-radius: 25px;
+    background-color: black;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.card-desc {
+    
+    padding: 25px 0 0 25px;
+}
+
+/* Events */
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
     
 }
 
+.events h2 {
+    color: white;
+    font-size: 2rem;
+    align-content: left;
+}
+
+.events i {
+    padding-right: 15px;
+}
+
+.event-items {
+    
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    list-style-type: none;
+
+}
+
+.event-loc {
+    list-style-type: none;
+    padding-left: 60px;
+}
+/* About US */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.about img {
+    height: 150px;
+    border-radius: 25px;
+    float: left;
+    flex-basis: 40%;
+}
+
+.about-items {
+    padding-left: 60px;
+}
+
+/* footer */
+
+.footer {
+    
+    margin-top: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+
+}
+
+.foot{
+    list-style-type: none;
+    align-content: center;
+    
+}
