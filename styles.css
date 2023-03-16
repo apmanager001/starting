@@ -36,23 +36,24 @@ body{
 }
 
 .nav {
-
     width: 100%;
 }
 .nav-item {
     float: right;
     vertical-align: bottom;
     color: white;
-    list-style: none;
     padding: 1rem;
     font-weight: bold;
     font-size: 2rem;
-    
 }
 
 .nav-item a {
     color: white;
 }
+
+.mobile {
+    display: none;
+  }
 
 /* Top Section*/
 
@@ -76,10 +77,6 @@ body{
     padding: 15px 15px 15px 5px;
 }
 
-.main-items li {
-    list-style-type: none;
-    justify-content: center;
-}
 
 .main-items {
     width: 500px;
@@ -120,12 +117,12 @@ body{
     margin: 10px;
     padding: 20px;
     color: white;
-    list-style-type: none;
+    
 
 }
 
 .event-loc {
-    list-style-type: none;
+   
     padding-left: 60px;
 }
 /* About US */
@@ -163,7 +160,57 @@ body{
 }
 
 .foot{
-    list-style-type: none;
+  
     align-content: center;
     
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px){
+   
+    .header .mobile {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .header h2{
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .header {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .nav-item {
+        align-content: center;
+        justify-content: center;
+        color: white;
+        gap: 1rem;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .padding {
+            display: flex;
+            margin: 0 0 0 0;
+            border-radius: 0px;
+            background-color: black;
+            justify-content: center;
+            width: 100%;
+            padding: 25px;
+    }
+    .footer .foot {
+        display:none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: black;
+    }
 }
